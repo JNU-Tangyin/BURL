@@ -34,10 +34,10 @@ def run(file_path, latent_dim, epochs, optimizer, loss, save_path):
     autoencoder.save(save_path)
 
 if __name__ == '__main__':
-    file_path = 'Training_Data.txt'
+    file_path = '.Pretrain_data/Pretrain_Data.txt'
     latent_dim = 100
     epochs = 50
     optimizer = 'adam'
     loss = 'mse'
-    save_path = 'Pretrain_model.h5'
+    save_path = '../Save_Model/Full_BURL.h5'
     run(file_path, latent_dim, epochs, optimizer, loss, save_path)
