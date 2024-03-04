@@ -1,0 +1,18 @@
+\begin{table*}[htbp]
+\setlength{\tabcolsep}{0.8pt}
+\centering
+\caption{Model Ablation by XGBoost}
+\label{tab:Ablation Model Evaluation Metrics by XGBoost}
+\scalebox{0.84}{
+\begin{tabular}{l|ccccc|ccccc|ccccc|ccccc}
+    \hline
+    \midrule
+    & \multicolumn{5}{c|}{\textbf{Accuracy}} & \multicolumn{5}{c|}{\textbf{F1 Score}} & \multicolumn{5}{c|}{\textbf{Precision}} & \multicolumn{5}{c}{\textbf{Recall}} \\
+    \textbf{Model} & \textbf{S-URL} & \textbf{NPJ} & \textbf{M-URL} & \textbf{URL-C} & \textbf{URL-A} & \textbf{S-URL} & \textbf{NPJ} & \textbf{M-URL} & \textbf{URL-C} & \textbf{URL-A} & \textbf{S-URL} & \textbf{NPJ} & \textbf{M-URL} & \textbf{URL-C} & \textbf{URL-A}  & \textbf{S-URL} & \textbf{NPJ} & \textbf{M-URL} & \textbf{URL-C} & \textbf{URL-A} \\ \hline
+    Full Model & \pmb{0.993} & \pmb{0.988} & \pmb{0.879} & \pmb{0.760} & \pmb{0.998} & \pmb{0.993} & \pmb{0.987} & \pmb{0.877} & \pmb{0.759} & \pmb{0.999} & \pmb{0.993} & \pmb{0.988} & \pmb{0.879} & \pmb{0.787} & \pmb{0.999} & \pmb{0.993} & \pmb{0.987} & \pmb{0.877} & \pmb{0.759} & \pmb{0.999} \\
+     $w/o$ FT & 0.813 & 0.775 & 0.749 & 0.307 & 0.963 & 0.812 & 0.775 & 0.746 & 0.308 & 0.958 & 0.814 & 0.775 & 0.752 & 0.306 & 0.956 & 0.812 & 0.775 & 0.746 & 0.308 & 0.959 \\
+     $w/o$ PUM & 0.87 & 0.775 & 0.715 & 0.292 & 0.956 & 0.870 & 0.775 & 0.712 & 0.291 & 0.947 & 0.871 & 0.775 & 0.715 & 0.293 & 0.941 & 0.870 & 0.775 & 0.712 & 0.291 & 0.954 \\
+     $w/o$ USU & 0.825 & 0.683 & 0.619 & 0.249 & 0.944 & 0.786 & 0.781 & 0.619 & 0.250 & 0.927 & 0.854 & 0.755 & 0.622 & 0.248 & 0.932 & 0.786 & 0.781 & 0.619 & 0.250 & 0.923 \\ \hline
+\end{tabular}
+}
+\end{table*}
